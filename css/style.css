@@ -370,6 +370,10 @@
 
 }
 
+.font-size0{
+  font-size: 0;
+}
+
 /* @media width: 768-1199px; */
 
 
@@ -492,7 +496,7 @@
 
   .article-description p {
     padding-right: 0;
-    width: 97%;
+    width: 100%;
     word-break: normal;
     margin-bottom: 40px;
   }
