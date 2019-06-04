@@ -11,6 +11,11 @@
   font-size: 0;
 }
 
+.to-inner{
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .wrapper {
   background-color: #f2f2f2;
 }
@@ -27,8 +32,6 @@
 }
 
 .header-inner{
-  width:  1100px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
@@ -64,7 +67,6 @@
 
 .bolt-theme-inner{
   text-align: center;
-  margin: 0 auto;
   padding: 250px 0;
 }
 
@@ -98,7 +100,7 @@
   justify-content: space-around;
 }
 
-.bolt-about-description h1 {
+.bolt-about-description h2 {
   color: #fff;
   font-family: Raleway;
   font-size: 24px;
@@ -122,13 +124,11 @@
 /* bolt-latest-work */
 
 .bolt-latest-work-inner{
-  margin: 0 auto;
   text-align: center;
-  width: 1100px;
   padding: 60px 0 70px 0;
 }
 
-.bolt-latest-work h1{
+.bolt-latest-work h2{
   color: #4e4e4e;
   font-family: Raleway;
   font-size: 24px;
@@ -202,13 +202,11 @@
 }
 
 .bolt-skills-inner{
-  margin: 0 auto;
   text-align: center;
-  width: 1100px;
   padding:70px 0 180px 0;
 }
 
-.bolt-skills-inner h1{
+.bolt-skills-inner h2{
   color: #f2f2f2;
   font-size: 24px;
   margin-bottom: 70px;
@@ -240,9 +238,7 @@
 /* sns */
 
 .sns-inner{
-  margin: 0 auto;
   text-align: right;
-  width: 1100px;
   padding: 200px 0;
 }
 
@@ -280,13 +276,11 @@
 }
 
 .footer-inner{
-  margin: 0 auto;
   text-align: right;
-  width: 1100px;
   padding: 20px 0 25px 0;
 }
 
-.footer-inner h1{
+.footer-inner p{
   color: #fff;
 }
 
@@ -299,14 +293,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-  /* header */
-
-  .header-inner {
+  .to-inner{
     width: 96%;
   }
-
-  /* header */
-
 
   /* main */
 
@@ -314,7 +303,6 @@
   /* bolt-about */
 
   .bolt-about-inner {
-    width: 96%;
     display: block;
     padding: 50px 0 25px 0;
     text-align: center;
@@ -326,17 +314,12 @@
 
   .bolt-about-description p {
     margin: 35px auto 0 auto;
-    width: 96%;
   }
 
   /* bolt-about */
 
 
   /* bolt-latest-work */
-
-  .bolt-latest-work-inner {
-    width: 96%;
-  }
 
   .bolt-latest-work .is-boxs {
     display: block;
@@ -357,7 +340,6 @@
 
   .bolt-latest-work .is-description p {
     padding-right: 0;
-    width: 96%;
     word-break: normal;
     margin-bottom: 40px;
   }
@@ -367,9 +349,6 @@
 
   /* bolt-skills */
 
-  .bolt-skills-inner {
-    width: 96%;
-  }
 
   .bolt-skills-boxs {
     display: block;
@@ -387,23 +366,8 @@
 
   /* bolt-skills */
 
-  /* sns */
-
-  .sns-inner {
-    width: 96%;
-  }
-
-  /* sns */
-
   /* main */
 
-  /* footer */
-
-  .footer-inner {
-    width: 96%;
-  }
-
-  /* footer */
 
 }
 
@@ -416,11 +380,14 @@
 
 @media screen and (max-width: 767px) {
 
+  .to-inner {
+    width: 96%;
+  }
+
   /* header */
 
   .header-inner {
     position: relative;
-    width: 96%;
   }
 
   .header-content {
@@ -494,7 +461,6 @@
   /* bolt-about */
 
   .bolt-about-inner {
-    width: 96%;
     display: block;
     padding: 50px 0 25px 0;
     text-align: center;
@@ -505,8 +471,8 @@
   }
 
   .bolt-about-description p {
-    margin: 35px auto 0 auto;
     width: 96%;
+    margin: 35px auto 0 auto;
   }
 
   /* bolt-about */
@@ -514,9 +480,6 @@
 
   /* bolt-latest-work */
 
-  .bolt-latest-work-inner {
-    width: 96%;
-  }
 
   .bolt-latest-work .is-boxs {
     display: block;
@@ -537,7 +500,6 @@
 
   .bolt-latest-work .is-description p {
     padding-right: 0;
-    width: 96%;
     word-break: normal;
     margin-bottom: 40px;
   }
@@ -547,10 +509,6 @@
 
 
   /* bolt-skills */
-
-  .bolt-skills-inner {
-    width: 96%;
-  }
 
   .bolt-skills-boxs {
     display: block;
@@ -572,7 +530,6 @@
   /* sns */
 
   .sns-inner {
-    width: 96%;
     padding-top: 50px;
   }
 
@@ -588,15 +545,6 @@
 
 
   /* main */
-
-
-  /* footer */
-
-  .footer-inner {
-    width: 96%;
-  }
-
-  /* footer */
 
 }
 
