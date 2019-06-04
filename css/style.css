@@ -7,6 +7,10 @@
 
 @charset "UTF-8";
 
+.font-size0 {
+  font-size: 0;
+}
+
 .wrapper {
   background-color: #f2f2f2;
 }
@@ -27,9 +31,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-.header-icon{
   padding: 15px 0;
 }
 
@@ -43,9 +44,9 @@
   display:  block;
   font-family:  Lato;
   font-size:  12px;
-  margin: 15px 0;
   padding:  14px 12px;
   text-decoration:  none;
+  transition: color .3s;
 }
 
 .header-content a:hover {
@@ -59,37 +60,37 @@
 /* main */
 
 
-/* div-bolt-theme */
+/* bolt-theme */
 
-.main{
-  padding-top: 78px;
+.bolt-theme-inner{
   text-align: center;
   margin: 0 auto;
+  padding: 250px 0;
 }
-.div-bolt-theme h1{
+
+.bolt-theme h1{
   color: #74cfae;
   font-size: 90px;
   font-family: Lato;
   font-weight: 700;
-  padding: 250px 0 20px 0;
+  margin-bottom: 20px;
 }
 
-.div-bolt-theme p{
+.bolt-theme p{
   color: #c0c0c0;
   font-size: 30px;
-  padding-bottom: 250px;
 }
 
-/* div-bolt-theme */
+/* bolt-theme */
 
 
-/* section-top */
+/* bolt-about */
 
-.section-top{
+.bolt-about{
   background-color: #74cfae;
 }
 
-.section-top-contents{
+.bolt-about-inner{
   padding-top: 50px;
   width: 1100px;
   margin: 0 auto;
@@ -97,154 +98,176 @@
   justify-content: space-around;
 }
 
-.section-top-description-text h1 {
+.bolt-about-description h1 {
   color: #fff;
   font-family: Raleway;
   font-size: 24px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 
-.section-top-description-text p {
+.bolt-about-description{
+  text-align: center;
+}
+
+.bolt-about-description p {
   color: #fff;
   font-size: 20px;
   width: 750px;
   word-break : break-all;
 }
 
-/* section-top */
+/* bolt-about */
 
 
-/* article */
+/* bolt-latest-work */
 
-.article{
+.bolt-latest-work-inner{
   margin: 0 auto;
   text-align: center;
   width: 1100px;
+  padding: 60px 0 70px 0;
 }
 
-.article-title h1{
+.bolt-latest-work h1{
   color: #4e4e4e;
   font-family: Raleway;
   font-size: 24px;
-  padding: 60px 0 40px 0;
+  margin-bottom: 40px;
 }
 
-.article-boxs{
+.bolt-latest-work .is-boxs {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.article-box{
-  padding: 0 100px 80px 0;
+.bolt-latest-work .is-box {
+  margin-right:  100px;
 }
 
-.article-box:nth-child(3n) {
-  padding-right: 0;
+.bolt-latest-work .is-box:nth-child(3n) {
+  margin-right: 0;
 }
 
-.article-box a{
+.bolt-latest-work .is-box:nth-child(n+4) {
+  margin-top: 80px;
+}
+
+.bolt-latest-work .is-box a {
   opacity: .7;
+  transition: opacity .3s;
+  display: inline-block;
 }
 
-.article-box a:hover {
+.bolt-latest-work .is-box a:hover {
   transition: all .3s;
   opacity: 1;
 }
 
-.article-description{
-  padding: 10px 0 70px 0;
+.bolt-latest-work .is-description {
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.article-description p{
+.bolt-latest-work .is-description p {
   color: #4e4e4e;
-  padding-right: 90px;
+  margin-right: 90px;
   width: 530px;
   word-break : normal;
 }
 
-.article-description a {
+.bolt-latest-work .is-description a {
   background-color: #74cfae;
   color: #fff;
   font-family: Lato;
   font-size: 12px;
   padding: 14px 20px;
+  transition: color .3s;
   text-decoration: none;
 }
-
-.article-description a:hover {
+.bolt-latest-work .is-description a:hover {
   color: #333;
   transition: all .3s;
 }
 
-/* article */
+/* bolt-latest-work  */
 
 
-/* section-bottom */
+/* bolt-skills */
 
-.section-bottom{
+.bolt-skills{
   background-color: #4e4e4e;
 }
 
-.section-bottom-title{
+.bolt-skills-inner{
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
+  padding:70px 0 180px 0;
+}
+
+.bolt-skills-inner h1{
   color: #f2f2f2;
   font-size: 24px;
-  padding: 70px 0;
+  margin-bottom: 70px;
 }
 
-.section-bottom-boxs{
+
+.bolt-skills-boxs {
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
 }
 
-.section-bottom-box{
-  padding-right: 180px;
+.bolt-skills-box {
+  margin-right: 180px;
 }
 
-.section-bottom-box:last-child{
-  padding-right: 0;
+.bolt-skills-box:last-child {
+  margin-right: 0;
 }
 
-.section-bottom-box p{
+.bolt-skills-box p {
   color: #f2f2f2;
   font-size: 16px;
   line-height: 50px;
 }
 
-/* section-bottom */
+/* bolt-skills */
 
 
-/* nav */
+/* sns */
 
-.nav{
-  padding-top: 200px;
+.sns-inner{
+  margin: 0 auto;
+  text-align: right;
+  width: 1100px;
+  padding: 200px 0;
 }
 
-.nav-icons{
+.sns-icons{
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
 }
 
-.nav-icon{
+.sns-icon{
   padding: 30px  0;
   width: 185px;
+  text-align: center;
+  transition: background-color .3s;
 }
 
-.nav-icon:hover{
+.sns-icon a {
+  color: #74cfae;
+}
+
+.sns-icon:hover{
   background-color: #fff;
   transition: all .3s;
 }
 
-.nav-icon a{
-  color: #74cfae;
-}
-
-/* nav */
+/* sns */
 
 
 /* main */
@@ -256,19 +279,18 @@
   background-color: #74cfae;
 }
 
-.footer-title{
+.footer-inner{
   margin: 0 auto;
   text-align: right;
   width: 1100px;
+  padding: 20px 0 25px 0;
 }
 
-.footer-title h1{
+.footer-inner h1{
   color: #fff;
-  padding:20px 0 25px 0;
 }
 
 /* footer */
-
 
 /* @media */
 
@@ -280,7 +302,7 @@
   /* header */
 
   .header-inner {
-    width: 97%;
+    width: 96%;
   }
 
   /* header */
@@ -289,90 +311,103 @@
   /* main */
 
 
-  /* section-top */
+  /* bolt-about */
 
-  .section-top-contents {
-    width: 97%;
+  .bolt-about-inner {
+    width: 96%;
+    display: block;
+    padding: 50px 0 25px 0;
+    text-align: center;
+  }
+
+  .bolt-about-description{
+    margin-top: 20px;
+  }
+
+  .bolt-about-description p {
+    margin: 35px auto 0 auto;
+    width: 96%;
+  }
+
+  /* bolt-about */
+
+
+  /* bolt-latest-work */
+
+  .bolt-latest-work-inner {
+    width: 96%;
+  }
+
+  .bolt-latest-work .is-boxs {
     display: block;
   }
 
-  .section-top-description-text h1 {
-    padding: 25px 0 35px 0;
+  .bolt-latest-work .is-box {
+    margin-right: 0;
   }
 
-  .section-top-description-text p {
-    width: 97%;
-    padding-bottom: 25px;
+  .bolt-latest-work .is-box:nth-child(n+5) {
+    margin-top: 0px;
   }
 
-  /* section-top */
-
-
-  /* article */
-
-  .article {
-    width: 97%;
-  }
-
-  .article-boxs {
+  .bolt-latest-work .is-description {
+    margin-top: 80px;
     display: block;
   }
 
-  .article-box {
-    padding: 0;
-  }
-
-  .article-box:nth-child(3n) {
-    padding-bottom: 80px;
-  }
-
-  .article-description {
-    padding-bottom: 70px;
-    display: block;
-  }
-
-  .article-description p {
+  .bolt-latest-work .is-description p {
     padding-right: 0;
-    width: 97%;
+    width: 96%;
     word-break: normal;
     margin-bottom: 40px;
   }
 
-  /* article */
+  /* bolt-latest-work */
 
 
-  /* section-bottom */
+  /* bolt-skills */
 
-  .section-bottom-boxs {
+  .bolt-skills-inner {
+    width: 96%;
+  }
+
+  .bolt-skills-boxs {
     display: block;
   }
 
-  .section-bottom-box {
-    padding: 0 0 80px 0;
+
+  .bolt-skills-box {
+    margin: 0 0 88px 0;
+
   }
 
-  .section-bottom-box:last-child {
-    padding-bottom: 0;
+  .bolt-skills-box:last-child {
+    margin-bottom: 0;
   }
 
-  /* section-bottom */
+  /* bolt-skills */
 
+  /* sns */
+
+  .sns-inner {
+    width: 96%;
+  }
+
+  /* sns */
 
   /* main */
 
   /* footer */
 
-  .footer-title {
-    width: 97%;
+  .footer-inner {
+    width: 96%;
   }
 
   /* footer */
 
 }
 
-.font-size0{
-  font-size: 0;
-}
+
 
 /* @media width: 768-1199px; */
 
@@ -385,7 +420,7 @@
 
   .header-inner {
     position: relative;
-    width: 97%;
+    width: 96%;
   }
 
   .header-content {
@@ -393,21 +428,22 @@
     top: -500px;
   }
 
-  .header-hamburger{
+  .header-hamburger {
     border: 1px solid #ddd;
     border-radius: 4px;
     height: 25px;
     padding: 10px;
     position: absolute;
-    right: 12px;
-    top: 14px;
+    right: 20px;
+    top: 15px;
     width: 34px;
   }
-  .header-hamburger-inner{
+
+  .header-hamburger-inner {
     position: relative;
   }
 
-  .header-hamburger-inner span{
+  .header-hamburger-inner span {
     background-color: #ddd;
     height: 3px;
     position: absolute;
@@ -433,15 +469,18 @@
   /* main */
 
 
-  /* div-bolt-theme */
+  /* bolt-theme */
 
-  .div-bolt-theme h1 {
-    font-size: 80px;
-    padding: 160px 0 20px 0;
+  .bolt-theme-inner{
+    padding: 160px 0 130px 0;
   }
 
-  .div-bolt-theme p {
-    padding-bottom: 130px;
+  .bolt-theme h1 {
+    font-size: 80px;
+  }
+
+  .bolt-theme p {
+    margin-top: 20px;
   }
 
   .br::after {
@@ -449,94 +488,103 @@
     white-space: pre;
   }
 
-  /* div-bolt-theme */
+  /* bolt-theme */
 
 
-  /* section-top */
+  /* bolt-about */
 
-  .section-top-contents {
-    width: 97%;
+  .bolt-about-inner {
+    width: 96%;
+    display: block;
+    padding: 50px 0 25px 0;
+    text-align: center;
+  }
+
+  .bolt-about-description {
+    margin-top: 20px;
+  }
+
+  .bolt-about-description p {
+    margin: 35px auto 0 auto;
+    width: 96%;
+  }
+
+  /* bolt-about */
+
+
+  /* bolt-latest-work */
+
+  .bolt-latest-work-inner {
+    width: 96%;
+  }
+
+  .bolt-latest-work .is-boxs {
     display: block;
   }
 
-  .section-top-description-text h1 {
-    padding: 25px 0 35px 0;
+  .bolt-latest-work .is-box {
+    margin-right: 0;
   }
 
-  .section-top-description-text p {
-    width: 97%;
-    padding-bottom: 25px;
+  .bolt-latest-work .is-box:nth-child(n+5) {
+    margin-top: 0px;
   }
 
-  /* section-top */
-
-
-  /* article */
-
-  .article {
-    width: 97%;
-  }
-
-  .article-boxs {
+  .bolt-latest-work .is-description {
+    margin-top: 80px;
     display: block;
   }
 
-  .article-box {
-    padding: 0;
-  }
-
-  .article-box:nth-child(3n) {
-    padding-bottom: 80px;
-  }
-
-  .article-description {
-    padding-bottom: 70px;
-    display: block;
-  }
-
-  .article-description p {
+  .bolt-latest-work .is-description p {
     padding-right: 0;
-    width: 100%;
+    width: 96%;
     word-break: normal;
     margin-bottom: 40px;
   }
 
-  /* article */
+
+  /* bolt-latest-work */
 
 
-  /* section-bottom */
+  /* bolt-skills */
 
-  .section-bottom-boxs {
+  .bolt-skills-inner {
+    width: 96%;
+  }
+
+  .bolt-skills-boxs {
     display: block;
   }
 
-  .section-bottom-box {
-    padding: 0 0 80px 0;
+
+  .bolt-skills-box {
+    margin: 0 0 88px 0;
+
   }
 
-  .section-bottom-box:last-child {
-    padding-bottom: 0;
+  .bolt-skills-box:last-child {
+    margin-bottom: 0;
   }
 
-  /* section-bottom */
+  /* bolt-skills */
 
 
-  /* nav */
+  /* sns */
 
-  .nav {
+  .sns-inner {
+    width: 96%;
     padding-top: 50px;
   }
 
-  .nav-icons {
+  .sns-icons {
     display: block;
   }
 
-  .nav-icon {
-    
+  .sns-icon {
     width: 100%;
   }
 
-  /* nav */
+  /* sns */
 
 
   /* main */
@@ -544,8 +592,8 @@
 
   /* footer */
 
-  .footer-title {
-    width: 97%;
+  .footer-inner {
+    width: 96%;
   }
 
   /* footer */
